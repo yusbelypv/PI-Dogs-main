@@ -1,0 +1,23 @@
+
+
+.ul_container{
+    padding: 0 0 5rem 15rem;
+    
+}
+
+.li_container{
+    list-style: none;
+    float: left;
+    margin: 0.2rem;
+    text-align: center;
+}
+
+.li_container button{
+    color: white;
+    background-color: #7e25b6;
+    width: 2.1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 25%;
+    border: 1px solid #7e25b6;
+    text-align: center;
+}

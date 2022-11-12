@@ -1,0 +1,152 @@
+
+.header_home{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    font-size: 20px;
+    color: #FFFFFF;
+    
+  }
+
+.header_home img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    
+}
+
+button{ 
+    cursor: pointer; 
+    border: none;
+    position: relative;
+}
+
+.header_container_left{
+    margin: 1rem;
+    padding-bottom: 0.15rem;
+    display: block;
+}
+
+.header_left{
+    padding-top: 0.5rem;
+    
+}
+
+.container_filters{
+    position: relative;
+    top: 05px;
+    right: 400px;
+    width: 190%;
+    border-radius: 25px;
+}
+
+.container_filters select{
+    padding: 0.3rem 0.9rem;
+    border: none;
+    box-shadow: 5px 5px 5px 0.5px rgba #3c173a;
+    background-color: #7a25b6;
+    color: white;
+    cursor: pointer;
+}
+
+.container_filters select:first-child{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.container_filters select:last-child{
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.header_right{
+    padding-top: 0.5rem;
+    position: absolute;
+    top: 42px;
+    right: 180px;
+}
+
+.button_add_dog{
+    width: 110%;
+    max-width: 180px;
+    font-size: 1.2rem; 
+    background: #7e25b6;
+    padding: 0rem 0rem;
+    transition: color 0.5s linear;
+    z-index: 100;
+    border: 0.3rem solid #7e25b6;
+    outline: 0.1rem solid #3c173a;
+    text-shadow: 0 0 3px #7e25b6;
+    box-shadow: 7px 6px 8px 0.4px #3c173a; /* efecto sombreado */
+}
+
+.button_add_dog:hover{ color: #7e25b6; }
+
+.button_add_dog::before,
+.button_add_dog::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.6s linear;
+    z-index: -10;
+}
+
+.button_add_dog::before{ transform: rotateY(90deg); }
+.button_add_dog::after { transform: rotateX(90deg); }
+
+.button_add_dog:hover::before,
+.button_add_dog:hover::after{
+    transform: rotate(0);
+}
+
+.main_container{
+    margin: 0 5% 0 5%;
+}
+
+.container_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-gap: 5% 0.5%;
+    justify-items: center;
+    padding: 2rem 0 10rem 0;
+}
+
+.container_card{ /* estilos de carta individual */
+    background-color: #333;
+    width: 100%;
+    border-color: #7e25b6;
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container_card:hover{
+    cursor: pointer;
+}
+
+
+.pagination{
+    
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer{
+    background-color: #333;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+   
+  }
+
